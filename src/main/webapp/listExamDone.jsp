@@ -19,10 +19,27 @@
         th {
             background-color: #f2f2f2;
         }
+                        header {
+                            background-color: #333;
+                            color: white;
+                            padding: 10px 20px;
+                            text-align: center;
+                        }
+                                .container {
+                                    margin: 100px auto;
+                                    max-width: 600px;
+                                    padding: 40px 40px 40px 40px;
+                                    background-color: #fff;
+                                    border-radius: 5px;
+                                    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                                }
     </style>
 </head>
 <body>
+<header>
     <h1>Lista de Exames Realizados</h1>
+    </header>
+  <div class="container">
    <table>
        <thead>
            <tr>
@@ -45,5 +62,6 @@
            </s:iterator>
        </tbody>
    </table>
+   </div>
 </body>
 </html>
