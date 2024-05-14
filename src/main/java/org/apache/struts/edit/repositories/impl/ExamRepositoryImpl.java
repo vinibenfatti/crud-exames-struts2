@@ -36,6 +36,7 @@ public class ExamRepositoryImpl extends AbstractRepository implements ExamReposi
         openConnection();
         PreparedStatement statement = preparedStatement(INSERT_INTO_EXAME.getQuery());
         try {
+            statement.setString(1, exam.getNm_exame());
             statement.setBoolean(2, exam.isIc_ativo());
             statement.setString(3, exam.getDs_detalhe_exame());
             statement.executeUpdate();
