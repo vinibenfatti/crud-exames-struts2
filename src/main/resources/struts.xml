@@ -95,6 +95,12 @@
 		<action name="deleteConfirmUser" class="org.apache.struts.edit.actions.user.DeleteUser" method="execute">
 			<result name="success">/thankyou.jsp</result>
 		</action>
+		<action name="editUser" class="org.apache.struts.edit.actions.user.UpdateUser" method="input">
+			<result name="input">/editUser.jsp</result>
+		</action>
+		<action name="editConfirmUser" class="org.apache.struts.edit.actions.user.UpdateUser" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
 		<!-- USER ACTIONS -->
 
 

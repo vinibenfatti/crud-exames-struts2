@@ -15,6 +15,7 @@ import static org.apache.struts.edit.enums.UserRepositoryEnum.DELETE_USER;
 import static org.apache.struts.edit.enums.UserRepositoryEnum.INSERT_INTO_USER;
 import static org.apache.struts.edit.enums.UserRepositoryEnum.SELECT_ALL_USERS;
 import static org.apache.struts.edit.enums.UserRepositoryEnum.SELECT_USER_BY_CREDENTIALS;
+import static org.apache.struts.edit.enums.UserRepositoryEnum.UPDATE_USER;
 
 
 public class UserRepositoryImpl extends AbstractRepository implements UserRepository {
@@ -60,6 +61,19 @@ public class UserRepositoryImpl extends AbstractRepository implements UserReposi
         PreparedStatement statement = preparedStatement(DELETE_USER.getQuery());
         try {
             statement.setString(1, user.getNm_login());
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void updateUser(User user) {
+        openConnection();
+        PreparedStatement statement = preparedStatement(UPDATE_USER.getQuery());
+        try {
+            statement.setString(2, user.getNm_login());
+            statement.setString(1, user.getDs_senha());
             statement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);

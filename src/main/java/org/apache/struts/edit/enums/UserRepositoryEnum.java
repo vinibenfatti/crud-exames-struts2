@@ -7,7 +7,9 @@ public enum UserRepositoryEnum {
 
     SELECT_ALL_USERS("SELECT * FROM usuario"),
     INSERT_INTO_USER("INSERT INTO usuario (nm_login, ds_senha, qt_tempo_inatividade) VALUES (?, ?, ?)"),
-    DELETE_USER("DELETE FROM usuario WHERE nm_login = ?");
+    DELETE_USER("DELETE FROM usuario WHERE nm_login = ?"),
+
+    UPDATE_USER("UPDATE usuario SET ds_senha = ? WHERE nm_login = ?");
 
     String query;
 
