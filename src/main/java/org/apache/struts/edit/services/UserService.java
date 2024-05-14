@@ -14,4 +14,6 @@ public interface UserService {
     void deleteUser(User user);
 
     void updateUser(User user);
+
+    double saveInactiveTime(double inactiveTime);
 }
