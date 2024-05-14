@@ -47,18 +47,35 @@
         input[type="submit"]:hover {
             background-color: #555;
         }
+
+                        header {
+                            background-color: #333;
+                            color: white;
+                            padding: 10px 20px;
+                            text-align: center;
+                        }
+                                .container {
+                                    margin: 50px auto;
+                                    max-width: 400px;
+                                    padding: 20px;
+                                    background-color: #fff;
+                                    border-radius: 5px;
+                                    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                                }
     </style>
 </head>
 
 <body>
+<header>
 <h1>Delete um Exame</h1>
+</header>
 
-<p>Complete as informações: </p>
-
+<div class="container">
 <s:form action="deleteConfirmExam" method="post">
     <s:textfield key="exam.cd_exame" label="Código do Exame" placeholder="Código do Exame"/>
     <s:submit key="submit" value="Delete"/>
 </s:form>
+</div>
 </body>
 
 </html>

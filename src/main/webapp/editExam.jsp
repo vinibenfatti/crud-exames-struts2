@@ -6,6 +6,21 @@
     <meta charset="UTF-8">
     <title>Jive Test - Enter OS Information</title>
     <style>
+
+        .container {
+            margin: 50px auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -51,16 +66,18 @@
 </head>
 
 <body>
-<h1>Inserir um novo Exame</h1>
+<header>
+<h1>Editar um novo Exame</h1>
+</header>
 
-<p>Complete as informações:</p>
-
+    <div class="container">
 <s:form action="editConfirmExam" method="post">
     <s:textfield key="exam.cd_exame" label="Código do Exame" placeholder="Código do Exame"/>
     <s:textfield key="exam.nm_exame" label="Nome do Exame" placeholder="Nome do Exame"/>
     <s:textfield key="exam.ds_detalhe_exame" label="Detalhe do Exame" placeholder="Detalhe do Exame"/>
     <s:submit key="submit" value="Submit"/>
 </s:form>
+    </div>
 </body>
 
 </html>
