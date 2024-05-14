@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+
+	<package name="default" extends="struts-bean-validation">
+
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+
+		<!-- EXAM ACTIONS -->
+		<action name="returnExams" class="org.apache.struts.edit.actions.exam.ReturnExams" method="execute">
+			<result name="success">/listExams.jsp</result>
+		</action>
+		<action name="insertExam" class="org.apache.struts.edit.actions.exam.InsertExam" method="input">
+			<result name="input">/insertExam.jsp</result>
+		</action>
+		<action name="insertConfirmExam" class="org.apache.struts.edit.actions.exam.InsertExam" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
+		<action name="deleteExam" class="org.apache.struts.edit.actions.exam.DeleteExam" method="input">
+			<result name="input">/deleteExam.jsp</result>
+		</action>
+		<action name="deleteConfirmExam" class="org.apache.struts.edit.actions.exam.DeleteExam" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
+		<action name="editExam" class="org.apache.struts.edit.actions.exam.UpdateExam" method="input">
+			<result name="input">/editExam.jsp</result>
+		</action>
+		<action name="editConfirmExam" class="org.apache.struts.edit.actions.exam.UpdateExam" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
+		<!-- EXAM ACTIONS -->
+
+		<!-- EMPLOYEES ACTIONS -->
+		<action name="returnEmployees" class="org.apache.struts.edit.actions.employee.ReturnEmployees" method="execute">
+			<result name="success">/listEmployees.jsp</result>
+		</action>
+		<action name="insertEmployee" class="org.apache.struts.edit.actions.employee.InsertEmployee" method="input">
+			<result name="input">/insertEmployee.jsp</result>
+		</action>
+		<action name="insertConfirmEmployee" class="org.apache.struts.edit.actions.employee.InsertEmployee" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
+		<action name="deleteEmployee" class="org.apache.struts.edit.actions.employee.DeleteEmployee" method="input">
+			<result name="input">/deleteEmployee.jsp</result>
+		</action>
+		<action name="deleteConfirmEmployee" class="org.apache.struts.edit.actions.employee.DeleteEmployee" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
+		<action name="editEmployee" class="org.apache.struts.edit.actions.employee.UpdateEmployee" method="input">
+			<result name="input">/editEmployee.jsp</result>
+		</action>
+		<action name="editConfirmEmployee" class="org.apache.struts.edit.actions.employee.UpdateEmployee" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
+		<!-- EMPLOYEES ACTIONS -->
+
+		<!-- EXAM DONE ACTIONS -->
+		<action name="returnExamDone" class="org.apache.struts.edit.actions.examDone.ReturnExamDone" method="execute">
+			<result name="success">/listExamDone.jsp</result>
+		</action>
+		<action name="insertExamDone" class="org.apache.struts.edit.actions.examDone.InsertExamDone" method="input">
+			<result name="input">/insertExamDone.jsp</result>
+		</action>
+		<action name="insertConfirmExamDone" class="org.apache.struts.edit.actions.examDone.InsertExamDone" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
+		<action name="returnExamDoneReport" class="org.apache.struts.edit.actions.examDone.report.ReturnExamDoneReport" method="input">
+			<result name="input">/listExamDoneReportInput.jsp</result>
+		</action>
+		<action name="returnConfirmExamDoneReport" class="org.apache.struts.edit.actions.examDone.report.ReturnExamDoneReport" method="execute">
+			<result name="success">/listExamDoneReportReturn.jsp</result>
+		</action>
+		<!-- EXAM DONE ACTIONS -->
+
+		<!-- USER ACTIONS -->
+		<action name="returnUsers" class="org.apache.struts.edit.actions.user.ReturnUsers" method="execute">
+			<result name="success">/listUsers.jsp</result>
+		</action>
+		<action name="insertUser" class="org.apache.struts.edit.actions.user.InsertUser" method="input">
+			<result name="input">/insertUser.jsp</result>
+		</action>
+		<action name="insertConfirmUser" class="org.apache.struts.edit.actions.user.InsertUser" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
+		<action name="deleteUser" class="org.apache.struts.edit.actions.user.DeleteUser" method="input">
+			<result name="input">/deleteUser.jsp</result>
+		</action>
+		<action name="deleteConfirmUser" class="org.apache.struts.edit.actions.user.DeleteUser" method="execute">
+			<result name="success">/thankyou.jsp</result>
+		</action>
+		<!-- USER ACTIONS -->
+
+
+
+		<!-- LOGIN/LOGOUT ACTIONS -->
+		<action name="login" class="org.apache.struts.edit.actions.login.LoginAction">
+			<result name="success">/index.jsp</result>
+		</action>
+<!--		<action name="logout" class="org.apache.struts.edit.actions.logout.LogoutAction">-->
+<!--			<result name="success">/login.jsp</result>-->
+<!--		</action>-->
+<!--		<action name="saveInactiveTime" class="org.apache.struts.edit.actions.login.SaveInactiveTimeAction">-->
+<!--			<result name="success" type="json"></result>-->
+<!--		</action>-->
+		<!-- LOGIN/LOGOUT ACTIONS -->
+
+	</package>
+
+</struts>
