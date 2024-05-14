@@ -41,6 +41,11 @@ public class UserServiceImpl implements UserService {
         this.userRepository.updateUser(user);
     }
 
+    @Override
+    public double saveInactiveTime(double inactiveTime) {
+        return 0;
+    }
+
     private String encodePassword(String password) {
         return Base64.getEncoder().encodeToString(password.getBytes());
     }

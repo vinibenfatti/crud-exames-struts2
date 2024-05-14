@@ -2,7 +2,21 @@
 <html>
 <head>
     <title>Login</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+       let lastInteractionTime = Date.now();
+
+        $(document).on('mousemove keypress', function() {
+            lastInteractionTime = Date.now();
+        });
+
+        setInterval(function() {
+            let currentTime = Date.now();
+            let inactiveTime = (currentTime - lastInteractionTime) / 1000 / 60; // minutes
+            if (inactiveTime > 90) {
+                window.location.href = "logoutAction"; // Redirect to logout action
+            }
+        }, 60000); // Check every minute
+    </script>
 </head>
 <body>
     <h2>Login</h2>
