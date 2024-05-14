@@ -35,6 +35,12 @@ public class UserServiceImpl implements UserService {
         this.userRepository.deleteUser(user);
     }
 
+    @Override
+    public void updateUser(User user) {
+        user.setDs_senha(encodePassword(user.getDs_senha()));
+        this.userRepository.updateUser(user);
+    }
+
     private String encodePassword(String password) {
         return Base64.getEncoder().encodeToString(password.getBytes());
     }

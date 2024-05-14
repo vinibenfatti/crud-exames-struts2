@@ -12,4 +12,6 @@ public interface UserService {
     User getUserBean();
 
     void deleteUser(User user);
+
+    void updateUser(User user);
 }

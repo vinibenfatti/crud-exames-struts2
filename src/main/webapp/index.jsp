@@ -28,5 +28,7 @@
 <p><a href='<s:url action="returnUsers" />'>Listar todos os usuários</a></p>
 <p><a href='<s:url action="insertUser" />'>Inserir novo usuário</a></p>
 <p><a href='<s:url action="deleteUser" />'>Deletar usuário</a></p>
+<p><a href='<s:url action="editUser" />'>Editar senha de usuário</a></p>
+<hr>
 </body>
 </html>
