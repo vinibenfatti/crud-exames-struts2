@@ -19,8 +19,12 @@ public class LoginAction extends ActionSupport {
 
     @Override
     public String execute() {
-        this.loginService.login(username, password);
-        return SUCCESS;
+        try {
+            this.loginService.login(username, password);
+            return SUCCESS;
+        }catch (Exception e) {
+            return ERROR;
+        }
     }
 }
 
