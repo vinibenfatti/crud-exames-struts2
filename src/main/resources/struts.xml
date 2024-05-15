@@ -21,19 +21,19 @@
 			<result name="input">/insertExam.jsp</result>
 		</action>
 		<action name="insertConfirmExam" class="org.apache.struts.edit.actions.exam.InsertExam" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<action name="deleteExam" class="org.apache.struts.edit.actions.exam.DeleteExam" method="input">
 			<result name="input">/deleteExam.jsp</result>
 		</action>
 		<action name="deleteConfirmExam" class="org.apache.struts.edit.actions.exam.DeleteExam" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<action name="editExam" class="org.apache.struts.edit.actions.exam.UpdateExam" method="input">
 			<result name="input">/editExam.jsp</result>
 		</action>
 		<action name="editConfirmExam" class="org.apache.struts.edit.actions.exam.UpdateExam" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<!-- EXAM ACTIONS -->
 
@@ -45,19 +45,19 @@
 			<result name="input">/insertEmployee.jsp</result>
 		</action>
 		<action name="insertConfirmEmployee" class="org.apache.struts.edit.actions.employee.InsertEmployee" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<action name="deleteEmployee" class="org.apache.struts.edit.actions.employee.DeleteEmployee" method="input">
 			<result name="input">/deleteEmployee.jsp</result>
 		</action>
 		<action name="deleteConfirmEmployee" class="org.apache.struts.edit.actions.employee.DeleteEmployee" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<action name="editEmployee" class="org.apache.struts.edit.actions.employee.UpdateEmployee" method="input">
 			<result name="input">/editEmployee.jsp</result>
 		</action>
 		<action name="editConfirmEmployee" class="org.apache.struts.edit.actions.employee.UpdateEmployee" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<!-- EMPLOYEES ACTIONS -->
 
@@ -69,7 +69,7 @@
 			<result name="input">/insertExamDone.jsp</result>
 		</action>
 		<action name="insertConfirmExamDone" class="org.apache.struts.edit.actions.examDone.InsertExamDone" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<action name="returnExamDoneReport" class="org.apache.struts.edit.actions.examDone.report.ReturnExamDoneReport" method="input">
 			<result name="input">/listExamDoneReportInput.jsp</result>
@@ -87,25 +87,26 @@
 			<result name="input">/insertUser.jsp</result>
 		</action>
 		<action name="insertConfirmUser" class="org.apache.struts.edit.actions.user.InsertUser" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<action name="deleteUser" class="org.apache.struts.edit.actions.user.DeleteUser" method="input">
 			<result name="input">/deleteUser.jsp</result>
 		</action>
 		<action name="deleteConfirmUser" class="org.apache.struts.edit.actions.user.DeleteUser" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<action name="editUser" class="org.apache.struts.edit.actions.user.UpdateUser" method="input">
 			<result name="input">/editUser.jsp</result>
 		</action>
 		<action name="editConfirmUser" class="org.apache.struts.edit.actions.user.UpdateUser" method="execute">
-			<result name="success">/thankyou.jsp</result>
+			<result name="success">/index.jsp</result>
 		</action>
 		<!-- USER ACTIONS -->
 
 		<!-- LOGIN/LOGOUT ACTIONS -->
 		<action name="login" class="org.apache.struts.edit.actions.login.LoginAction">
 			<result name="success">/index.jsp</result>
+			<result name="error">/login.jsp</result>
 		</action>
 		<action name="logout" class="org.apache.struts.edit.actions.logout.LogoutAction">
 			<result name="success">/login.jsp</result>
