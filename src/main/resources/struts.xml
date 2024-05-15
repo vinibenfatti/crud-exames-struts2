@@ -103,8 +103,6 @@
 		</action>
 		<!-- USER ACTIONS -->
 
-
-
 		<!-- LOGIN/LOGOUT ACTIONS -->
 		<action name="login" class="org.apache.struts.edit.actions.login.LoginAction">
 			<result name="success">/index.jsp</result>
@@ -118,5 +116,4 @@
 		<!-- LOGIN/LOGOUT ACTIONS -->
 
 	</package>
-
 </struts>
