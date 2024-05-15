@@ -24,6 +24,7 @@ public class ExamDoneServiceImpl implements ExamDoneService {
 
     @Override
     public void saveExamDone(ExamDone examDone) {
+        examDone.setDt_realizacao(Date.valueOf(LocalDate.now()));
         this.examDoneRepository.saveExamDone(examDone);
     }
 

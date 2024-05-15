@@ -6,7 +6,7 @@
     <artifactId>bean-validation</artifactId>
 
     <name>Bean Validation</name>
-    <description>bean (JSR 303) validation example application for the Struts 2 getting started tutorials</description>
+    <description>avaliacao</description>
 
     <packaging>war</packaging>
 
@@ -29,11 +29,6 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>4.3.1.Final</version>
-        </dependency>
 
         <dependency>
             <groupId>org.apache.struts</groupId>

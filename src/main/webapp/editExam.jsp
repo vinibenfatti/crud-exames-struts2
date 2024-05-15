@@ -26,15 +26,15 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            margin-left: 20px; /* Adiciona uma margem à esquerda */
+            margin-left: 20px;
         }
 
         h1 {
-            margin-top: 20px; /* Adiciona um espaçamento superior ao título */
+            margin-top: 20px;
         }
 
         p {
-            margin-bottom: 20px; /* Adiciona um espaçamento inferior ao parágrafo */
+            margin-bottom: 20px;
         }
 
         form {
@@ -46,10 +46,10 @@
         }
 
         input[type="text"], input[type="submit"] {
-            margin-bottom: 10px; /* Adiciona um espaçamento inferior aos campos de texto e ao botão */
+            margin-bottom: 10px;
             padding: 8px;
             width: 100%;
-            box-sizing: border-box; /* Garante que o padding não altere a largura do input */
+            box-sizing: border-box;
         }
 
         input[type="submit"] {
